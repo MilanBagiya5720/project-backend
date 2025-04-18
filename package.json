@@ -12,8 +12,7 @@
     "test": "cross-env NODE_ENV=test jest --detectOpenHandles",
     "test:watch": "npm test -- --watch",
     "lint": "eslint src",
-    "format": "prettier --write src",
-    "prepare": "husky install"
+    "format": "prettier --write src"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",

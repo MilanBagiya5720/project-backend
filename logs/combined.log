@@ -1,139 +1,18 @@
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T11:19:05.401Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T11:19:24.924Z"}
-{"errorLabelSet":{},"level":"error","message":"MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"localhost:27017":{"$clusterTime":null,"address":"localhost:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":275988149,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":null,"stale":false,"type":"Unknown"},"stack":"MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n    at _handleConnectionErrors (D:\\Playground\\project-backend\\node_modules\\mongoose\\lib\\connection.js:1165:11)\n    at NativeConnection.openUri (D:\\Playground\\project-backend\\node_modules\\mongoose\\lib\\connection.js:1096:11)\n    at runNextTicks (node:internal/process/task_queues:60:5)\n    at listOnTimeout (node:internal/timers:545:9)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-04-17T11:19:54.932Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T11:20:06.149Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T11:20:08.384Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T11:20:09.414Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T11:20:13.521Z"}
-{"errorLabelSet":{},"level":"error","message":"MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"localhost:27017":{"$clusterTime":null,"address":"localhost:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":276036845,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":null,"stale":false,"type":"Unknown"},"stack":"MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n    at _handleConnectionErrors (D:\\Playground\\project-backend\\node_modules\\mongoose\\lib\\connection.js:1165:11)\n    at NativeConnection.openUri (D:\\Playground\\project-backend\\node_modules\\mongoose\\lib\\connection.js:1096:11)\n    at runNextTicks (node:internal/process/task_queues:60:5)\n    at listOnTimeout (node:internal/timers:545:9)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-04-17T11:20:43.525Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T11:20:45.867Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:35:47.052Z"}
-{"level":"error","message":"MongoDB connection error: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.","stack":"MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n    at NativeConnection.createClient (D:\\Playground\\project-backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\connection.js:236:11)\n    at NativeConnection.openUri (D:\\Playground\\project-backend\\node_modules\\mongoose\\lib\\connection.js:1071:34)\n    at Mongoose.connect (D:\\Playground\\project-backend\\node_modules\\mongoose\\lib\\mongoose.js:450:15)\n    at Object.<anonymous> (D:\\Playground\\project-backend\\src\\server.js:6:10)\n    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n    at Module.load (node:internal/modules/cjs/loader:1288:32)\n    at Module._load (node:internal/modules/cjs/loader:1104:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n    at node:internal/main/run_main_module:28:49","timestamp":"2025-04-18T04:35:47.058Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:36:00.621Z"}
-{"level":"error","message":"MongoDB connection error: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.","stack":"MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n    at NativeConnection.createClient (D:\\Playground\\project-backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\connection.js:236:11)\n    at NativeConnection.openUri (D:\\Playground\\project-backend\\node_modules\\mongoose\\lib\\connection.js:1071:34)\n    at Mongoose.connect (D:\\Playground\\project-backend\\node_modules\\mongoose\\lib\\mongoose.js:450:15)\n    at Object.<anonymous> (D:\\Playground\\project-backend\\src\\server.js:6:10)\n    at Module._compile (node:internal/modules/cjs/loader:1469:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)\n    at Module.load (node:internal/modules/cjs/loader:1288:32)\n    at Module._load (node:internal/modules/cjs/loader:1104:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n    at node:internal/main/run_main_module:28:49","timestamp":"2025-04-18T04:36:00.626Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:36:46.216Z"}
-{"code":"ER_BAD_DB_ERROR","errno":1049,"level":"error","message":"MySQL connection error: Unknown database 'authdb'","sqlMessage":"Unknown database 'authdb'","sqlState":"42000","stack":"Error: Unknown database 'authdb'\n    at Packet.asError (D:\\Playground\\project-backend\\node_modules\\mysql2\\lib\\packets\\packet.js:740:17)\n    at ClientHandshake.execute (D:\\Playground\\project-backend\\node_modules\\mysql2\\lib\\commands\\command.js:29:26)\n    at PoolConnection.handlePacket (D:\\Playground\\project-backend\\node_modules\\mysql2\\lib\\base\\connection.js:475:34)\n    at PacketParser.onPacket (D:\\Playground\\project-backend\\node_modules\\mysql2\\lib\\base\\connection.js:93:12)\n    at PacketParser.executeStart (D:\\Playground\\project-backend\\node_modules\\mysql2\\lib\\packet_parser.js:75:16)\n    at Socket.<anonymous> (D:\\Playground\\project-backend\\node_modules\\mysql2\\lib\\base\\connection.js:100:25)\n    at Socket.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)\n    at Readable.push (node:internal/streams/readable:390:5)","timestamp":"2025-04-18T04:36:46.502Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:36:55.537Z"}
-{"code":"ER_BAD_DB_ERROR","errno":1049,"level":"error","message":"MySQL connection error: Unknown database 'authdb'","sqlMessage":"Unknown database 'authdb'","sqlState":"42000","stack":"Error: Unknown database 'authdb'\n    at Packet.asError (D:\\Playground\\project-backend\\node_modules\\mysql2\\lib\\packets\\packet.js:740:17)\n    at ClientHandshake.execute (D:\\Playground\\project-backend\\node_modules\\mysql2\\lib\\commands\\command.js:29:26)\n    at PoolConnection.handlePacket (D:\\Playground\\project-backend\\node_modules\\mysql2\\lib\\base\\connection.js:475:34)\n    at PacketParser.onPacket (D:\\Playground\\project-backend\\node_modules\\mysql2\\lib\\base\\connection.js:93:12)\n    at PacketParser.executeStart (D:\\Playground\\project-backend\\node_modules\\mysql2\\lib\\packet_parser.js:75:16)\n    at Socket.<anonymous> (D:\\Playground\\project-backend\\node_modules\\mysql2\\lib\\base\\connection.js:100:25)\n    at Socket.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)\n    at Readable.push (node:internal/streams/readable:390:5)","timestamp":"2025-04-18T04:36:55.576Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:38:55.590Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:38:55.634Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:40:11.910Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:40:12.090Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:40:19.854Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:40:19.926Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:41:17.498Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:41:17.573Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:42:22.853Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:42:22.907Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:42:25.158Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:42:25.221Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:42:28.961Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:42:29.028Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:42:44.140Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:42:44.183Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:42:46.438Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:42:46.489Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:42:59.071Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:42:59.113Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:44:36.341Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:44:36.390Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:44:44.503Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:44:44.577Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:46:33.840Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:46:33.932Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:47:02.051Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:47:02.110Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:47:06.939Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:47:06.989Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:47:13.330Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:47:13.424Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:47:30.827Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:47:30.889Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:47:36.812Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:47:36.865Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:47:41.799Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:47:41.858Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:47:54.520Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:47:54.585Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:48:08.715Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:48:08.786Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:48:16.009Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:48:16.099Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:48:38.876Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:48:38.941Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:48:44.130Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:48:44.182Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:48:47.935Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:48:47.988Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:49:07.372Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:49:07.451Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:49:09.337Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:49:09.395Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:49:48.070Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:49:48.139Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:50:21.854Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:50:21.910Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:50:23.703Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:50:23.754Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:50:25.512Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:50:25.563Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:50:27.831Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:50:27.890Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:50:45.665Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:50:45.732Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:50:47.466Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:50:47.645Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T04:50:54.369Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T04:50:54.485Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:05:12.862Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:05:13.127Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:05:47.086Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:05:47.147Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:06:02.616Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:06:02.691Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:06:11.167Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:06:11.226Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:06:17.904Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:06:17.966Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:06:23.486Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:06:23.570Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:06:30.413Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:06:30.470Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:06:32.832Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:06:32.884Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:08:22.938Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:08:23.003Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:08:41.004Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:08:41.072Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:09:03.898Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:09:03.945Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:09:14.800Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:09:14.885Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:09:19.918Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:09:19.972Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:26:01.253Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:26:01.321Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:26:16.425Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:26:16.483Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:26:23.655Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:26:23.711Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:26:28.592Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:26:28.646Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:26:37.542Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:26:37.591Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:26:42.933Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:26:42.984Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:26:45.339Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:26:45.391Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:26:50.413Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:26:50.473Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:28:56.698Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:28:56.757Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:28:59.509Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:28:59.621Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:29:00.698Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:29:00.756Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:29:08.785Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:29:08.826Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:29:27.788Z"}
-{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:29:27.840Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:56:38.132Z"}
+{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:56:38.180Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:58:26.557Z"}
+{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:58:26.679Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:59:44.998Z"}
+{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:59:45.111Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T05:59:48.627Z"}
+{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T05:59:48.684Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T06:00:03.010Z"}
+{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T06:00:03.064Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T06:00:05.040Z"}
+{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T06:00:05.089Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T06:01:10.191Z"}
+{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T06:01:10.263Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T06:01:21.698Z"}
+{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T06:01:21.761Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-18T06:01:25.290Z"}
+{"level":"info","message":"Connected to MySQL","timestamp":"2025-04-18T06:01:25.355Z"}

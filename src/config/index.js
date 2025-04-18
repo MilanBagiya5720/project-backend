@@ -9,9 +9,6 @@ const baseConfig = {
         jwt: process.env.JWT_SECRET,
         jwtExp: process.env.JWT_EXPIRES_IN,
     },
-    mongodb: {
-        uri: process.env.MONGODB_URI,
-    },
 };
 
 const config = {
