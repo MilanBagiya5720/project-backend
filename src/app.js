@@ -7,6 +7,7 @@ const config = require('./config');
 const authRoutes = require('./routes/auth.routes');
 const userRoutes = require('./routes/user.routes');
 const usersRoutes = require('./routes/users.routes');
+const videosRoutes = require('./routes/videos.routes');
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ function setupRoutes() {
     app.use('/api/v1/auth', authRoutes); // Authentication routes
     app.use('/api/v1/users', usersRoutes); // Users routes (For admin)
     app.use('/api/v1/user', userRoutes); // User routes (For user)
+    app.use('/api/v1/videos', videosRoutes); // Video routes
 }
 
 // Centralized error handling
