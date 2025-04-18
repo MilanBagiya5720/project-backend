@@ -1,33 +1,22 @@
 const UserModel = require('../models/user.model');
 const response = require('../utils/response');
 
-const getUsers = async (req, res) => {
+exports.getUserProfile = async (req, res) => {
     try {
-        const users = await UserModel.getAllUsers();
-        return response.success(res, users, 'Users fetched successfully');
+        const user = await UserModel.getUserById(req.user.id);
+        return response.success(res, user, 'User profile fetched successfully');
     } catch (err) {
         console.error(err);
         return response.error(res, 'Database error');
     }
 };
 
-const createUser = async (req, res) => {
-    const { name, email, password } = req.body;
-
-    if (!name || !email || !password) {
-        return response.error(res, 'All fields are required', 400);
-    }
-
+exports.getUserByEmail = async (req, res) => {
     try {
-        const newUser = await UserModel.createUser(name, email, password);
-        return response.success(res, newUser, 'User created successfully', 201);
+        const user = await UsersModel.getUserByEmail(req.params.email);
+        return response.success(res, user, 'User fetched successfully');
     } catch (err) {
         console.error(err);
         return response.error(res, 'Database error');
     }
-};
-
-module.exports = {
-    getUsers,
-    createUser,
 };

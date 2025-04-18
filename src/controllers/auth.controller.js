@@ -1,18 +1,21 @@
 const { createUser, getUserByEmail } = require('../models/user.model');
 const { hashPassword, comparePassword } = require('../utils/hash');
 const jwt = require('jsonwebtoken');
+const config = require('../config');
 
-const registerUser = async (username, email, password) => {
+// Helper function to create user (with role)
+const registerUser = async ({ username, email, password, role = 'user' }) => {
     const existingUser = await getUserByEmail(email);
     if (existingUser) {
         throw new Error('Email already exists');
     }
 
-    const hashed = await hashPassword(password);
-    await createUser(username, email, hashed);
+    const hashedPassword = await hashPassword(password);
+    await createUser(username, email, hashedPassword, role);
 };
 
-const authenticateUser = async (email, password) => {
+// Helper function to authenticate user
+const authenticateUser = async ({ email, password }) => {
     const user = await getUserByEmail(email);
     if (!user) {
         throw new Error('User not found');
@@ -26,25 +29,33 @@ const authenticateUser = async (email, password) => {
     return user;
 };
 
+// User registration handler
 const signup = async (req, res) => {
+    const { username, email, password, role } = req.body;
+
     try {
-        await registerUser(req.body.username, req.body.email, req.body.password);
+        await registerUser({ username, email, password, role });
         res.status(201).json({ message: 'User registered successfully' });
-    } catch (err) {
-        res.status(400).json({ message: err.message });
+    } catch (error) {
+        res.status(400).json({ message: error.message });
     }
 };
 
+// User login handler
 const login = async (req, res) => {
+    const { email, password } = req.body;
+
     try {
-        const user = await authenticateUser(req.body.email, req.body.password);
-        const token = jwt.sign({ id: user.id, email: user.email }, process.env.JWT_SECRET,
-            { expiresIn: process.env.JWT_EXPIRES_IN });
+        const user = await authenticateUser({ email, password });
+        const token = jwt.sign(
+            { id: user.id, email: user.email, role: user.role },
+            config.secrets.jwt,
+            { expiresIn: config.secrets.jwtExp }
+        );
         res.json({ message: 'Login successful', token });
-    } catch (err) {
-        res.status(400).json({ message: err.message });
+    } catch (error) {
+        res.status(400).json({ message: error.message });
     }
 };
 
 module.exports = { signup, login };
-
